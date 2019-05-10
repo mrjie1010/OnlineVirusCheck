@@ -26,7 +26,7 @@ if (isset($_POST['login'])) {
             //echo $token;
             //echo "token:". $token. '<br>';
             //echo "row[3]:". $row[3]. '<br>';
-            if('admin' == $row[3])
+            if('admin' == $row[2])
             {
                 session_start();
                 $_SESSION['username'] = $un;
