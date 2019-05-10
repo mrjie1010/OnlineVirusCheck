@@ -12,7 +12,7 @@ if (isset($_POST['login'])) {
     $query = "SELECT * FROM user WHERE username='$un'";
     $result = $conn->query($query);
     if (!$result){
-        die($conn->error);}
+        die($conn->error);}.        
         else if($result->num_rows)
         {
             $row = $result->fetch_array(MYSQLI_NUM);
